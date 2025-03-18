@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="venus.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venus</title>
+  </head>
+  <body>
+    <a href="tata_surya.html" class="picikan"
+      ><button class="button1">X</button></a
+    >
+    <img src="aset/venus.png" alt="venus" class="venus" />
+    <div class="aku" style="position: absolute">
+      <div class="container">
+        <button class="penjelasan1" type="button" onclick="hayo()" style="background-color: white; color: black;">1</button>
+        <button class="penjelasan2" type="button" onclick="sate()">2</button>
+        <button class="penjelasan3" type="button" onclick="asalain()">3</button>
+        <button class="penjelasan4" type="button" onclick="bahagia()">4</button>
+      </div>
+    </div>
+    <div class="tempat">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Venus, planet kedua dari Matahari, memiliki ukuran, massa, kerapatan,
+          dan komposisi yang hampir sama dengan Bumi. Sebelum tahun 1960-an,
+          ilmuwan dan penulis fiksi ilmiah berspekulasi bahwa Venus mungkin
+          mirip dengan Bumi, dengan hutan tropis yang subur. Namun, pandangan
+          ini berubah ketika pengamatan baru mengungkapkan permukaan Venus yang
+          sangat panas dengan suhu lebih dari 400 derajat Celsius dan tekanan
+          atmosfer hampir seratus kali lebih besar dari Bumi. <br /><br />
+          Perbedaan utama Venus dengan Bumi terletak pada atmosfernya. Awan di
+          Venus, yang menyembunyikan permukaannya, terbuat dari asam sulfat
+          pekat—yang pada dasarnya merupakan asam baterai—bukan dari air seperti
+          di Bumi. Sekitar 700 juta tahun yang lalu, Venus mengalami aktivitas
+          vulkanik besar yang membanjiri permukaannya dengan lava baru dan
+          mengisi atmosfer dengan gas rumah kaca, menyebabkan efek rumah kaca
+          yang tak terkendali. <br />
+          <br />
+          Hanya radar yang dapat menyelidiki melalui awan tebal di atmosfer
+          Venus untuk mengamati permukaannya. Data radar yang dikumpulkan selama
+          bertahun-tahun dari berbagai sumber digunakan untuk membuat gambaran
+          warna indah dari permukaan Venus. <br />
+          <br />
+        </p>
+      </div>
+    </div>
+    <div class="tempat1" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Meskipun Venus mungkin memiliki air cair pada masa muda, ada
+          pertanyaan apakah planet ini pernah bisa dihuni atau masih bisa dihuni
+          saat ini. Penemuan bukti kehidupan masa lalu akan menjadi tantangan
+          besar karena aktivitas vulkanik besar telah mengubah 80% permukaan
+          planet dalam sejarah satu miliar tahun terakhir. Namun, jika sampel
+          dari permukaan kuno Venus dapat dikembalikan suatu hari nanti, hal itu
+          bisa memberikan banyak penemuan penting. <br />
+          <br />
+          Karakteristik Fisik Venus: <br />
+          <ul>
+            <li>Diameter: 12.104 km</li>
+            <li>Jarak dari Matahari: 108.200.000 km (sekitar 7 satuan astronomi)</li>
+            <li>Jumlah bulan: 0</li>
+            <li>Suhu: sekitar 480 derajat Celsius</li>
+            <li>Massa: sekitar 4,868 × 10^24 kg, sekitar 82% dari massa Bumi</li>
+            <li>Periode rotasi: 243 hari (berlawanan arah jarum jam)</li>
+            <li>Periode orbit: 225 hari</li>
+            <li>Atmosfer: awan sulfurik tebal</li>
+            <li>Kemiringan sumbu: 177 derajat (retrograde)</li>
+            <li>Medan magnet: hampir tidak ada</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="tempat2" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          
+        </p>
+      </div>
+    </div>
+    <div class="tempat3" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          
+        </p>
+      </div>
+    </div>
+    <script>
+      function createStars() {
+        const container = document.querySelector("body");
+        for (let i = 0; i < 1000; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.width = ".1px";
+          star.style.height = ".1px";
+          star.style.top = Math.random() * 160 + "%";
+          star.style.left = Math.random() * 100 + "%";
+          container.appendChild(star);
+        }
+      }
+      createStars();
+
+      function hayo() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan1");
+        let yahe = document.querySelector(".penjelasan2");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (mauladi.style.display === "none") {
+          mauladi.style.display = "block";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+          
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+         
+        }
+      }
+      function sate() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan2")
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (astro.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "block";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function asalain() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan3");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan4")
+        
+
+        if (apayok.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "block";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function bahagia() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan4");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan3")
+
+        if (enak.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "block";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+    </script>
+  </body>
+</html>

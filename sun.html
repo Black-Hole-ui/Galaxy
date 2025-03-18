@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="sun.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sun</title>
+  </head>
+  <body>
+    
+    <a href="tata_surya.html" class="picikan"
+      ><button class="button1">X</button></a
+    >
+    <img src="aset/sun.png" alt="sun" class="sun" />
+    <div class="aku" style="position: absolute">
+      <div class="container">
+        <button class="penjelasan1" type="button" onclick="hayo()" style="color: black; background-color: white;">1</button>
+        <button class="penjelasan2" type="button" onclick="sate()">2</button>
+        <button class="penjelasan3" type="button" onclick="asalain()">3</button>
+        <button class="penjelasan4" type="button" onclick="bahagia()">4</button>
+      </div>
+    </div>
+    <div class="tempat">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Matahari adalah bintang pusat dari tata surya kita yang berada sekitar
+          150 juta kilometer dari Bumi. Sebagai sumber utama energi bagi
+          kehidupan di Bumi, Matahari memiliki struktur yang kompleks dan
+          dinamis. Permukaannya terdiri dari lapisan yang berbeda, termasuk
+          fotosfer yang terlihat kita lihat dari Bumi, korona yang sangat panas,
+          dan zona konvektif di dalamnya yang menciptakan aktivitas matahari
+          seperti bintik matahari dan ledakan besar yang disebut letusan
+          matahari. <br />
+          <br />
+          Matahari terbentuk sekitar 4,6 miliar tahun yang lalu dari awan gas
+          dan debu di galaksi Bima Sakti. Proses pembentukannya dimulai dengan
+          gravitasi yang menyebabkan kumpulan gas dan debu ini berkumpul dan
+          memanaskan dirinya sendiri sampai mencapai suhu yang cukup untuk
+          memulai reaksi termonuklir, yaitu fusi nuklir hidrogen menjadi helium.
+          Reaksi ini menghasilkan energi yang sangat besar dan cahaya yang kita
+          lihat sebagai sinar matahari. <br />
+          <br />
+          Matahari adalah bintang yang relatif stabil, tetapi mengalami siklus
+          aktifitas yang teratur. Siklus Matahari terjadi dalam rentang sekitar
+          11 tahun dan mencakup periode di mana jumlah bintik matahari di
+          permukaannya meningkat dan menurun secara teratur. Fenomena ini
+          mempengaruhi cuaca antariksa dan kondisi di Bumi, seperti intensitas
+          radiasi dan geomagnetik.
+           
+        </p>
+      </div>
+    </div>
+    <div class="tempat1" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Selain menyediakan cahaya dan panas yang sangat diperlukan untuk
+          kehidupan, Matahari juga memengaruhi planet-planet di tata surya kita
+          melalui gaya tariknya yang besar. Gravitasi Matahari mempertahankan
+          orbit Bumi dan planet lainnya, serta mempengaruhi dinamika atmosfer
+          dan iklim Bumi. Selain itu, Matahari juga menjadi objek studi utama
+          dalam penelitian astronomi dan ilmu ruang angkasa untuk memahami asal
+          usul bintang-bintang, evolusi mereka, dan pengaruh mereka terhadap
+          planet-planet di sekitarnya. <br />
+          <br />
+          Studi tentang Matahari juga penting untuk memahami kondisi di luar
+          tata surya kita. Kehidupan dan kondisi di planet-planet lain, serta
+          eksoplanet di luar tata surya, sangat dipengaruhi oleh bintang induk
+          mereka. Dengan memahami bagaimana Matahari bekerja dan berevolusi,
+          ilmuwan dapat mengembangkan teori dan model untuk mengerti berbagai
+          fenomena astrofisika yang terjadi di seluruh alam semesta. <br />
+          <br />
+          Secara keseluruhan, Matahari adalah bintang yang penuh misteri dan
+          keajaiban, memberikan cahaya, energi, dan kehidupan bagi planet-planet
+          di tata surya kita. Dengan penelitian yang terus berkembang, kita
+          semakin memahami peran pentingnya dalam eksistensi dan perkembangan
+          kehidupan di Bumi serta di alam semesta luas.
+        </p>
+        
+      </div>
+    </div>
+    <div class="tempat2" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">Karakteristik Fisik Sun : 
+          <ul>
+            <li>diameter: 1,392,684 km</li>
+            <li>distance from sun: 0 km (1 AU)</li>
+            <li>number moons: 0 (tidak memiliki bulan)</li>
+            <li>temperature: sekitar 15 juta derajat Celsius (di inti) dan sekitar 5,500 derajat Celsius (di fotosfer)</li>
+            <li>mass: 1.989 × 10^30 kg</li>
+            <li>rotational period: sekitar 25-35 hari (rotasi berbeda-beda tergantung pada lintang)</li>
+            <li>orbital period: sekitar 225-250 juta tahun untuk satu putaran sekitar pusat galaksi Bima Sakti</li>
+            <li>atmosphere: terdiri dari plasma dan gas seperti hidrogen, helium, dan unsur berat lainnya dalam bentuk yang terionisasi</li>
+            <li>axial tilt: sekitar 7.25 derajat</li>
+            <li>magnetic field: memiliki medan magnet yang sangat kuat</li>
+          </ul><br /></p>
+      </div>
+    </div>
+    <div class="tempat3" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan"></p>
+      </div>
+    </div>
+    <script>
+      function createStars() {
+        const container = document.querySelector("body");
+        for (let i = 0; i < 1000; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.width = ".1px";
+          star.style.height = ".1px";
+          star.style.top = Math.random() * 160 + "%";
+          star.style.left = Math.random() * 100 + "%";
+          container.appendChild(star);
+        }
+      }
+      createStars();
+
+      function hayo() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan1");
+        let yahe = document.querySelector(".penjelasan2");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (mauladi.style.display === "none") {
+          mauladi.style.display = "block";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+          
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+         
+        }
+      }
+      function sate() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan2")
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (astro.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "block";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function asalain() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan3");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan4")
+        
+
+        if (apayok.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "block";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function bahagia() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan4");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan3")
+
+        if (enak.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "block";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+    </script>
+  </body>
+</html>

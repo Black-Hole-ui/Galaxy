@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="Menu.css" />
+  </head>
+  <body>
+    <div class="muhammad" id="he" style="display: none; z-index: 1000;">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          <button style="text-decoration: none; color: black; text-align: center;" class="syg" onclick="tahu()">Pengguna</a></button>
+          <button style="text-decoration: none; color: black; text-align: center;" class="ayg" onclick="tak()">Admin</a></button>
+          <button type="button" class="btn" onclick="kacau()" >X</button>
+        </p>
+      </div>
+    </div>
+    <div class="muhammad" id="akai" style="display: none; z-index: 1000;">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          <div class="inputbox">
+            <input required="required" type="email" id="user" />
+            <span>Username</span>
+            <i></i>
+          </div>
+          <div class="password">
+            <input required="required" type="password" id="pass"/>
+            <span>Password</span>
+            <i></i>
+          </div>
+          <button type="button" class="btn" onclick="uh()" >X</button>
+          <a href="admin.html" style="text-decoration: none; color: black; text-align: center;" class="btnlog" onclick="return chuak()">Masuk sebagai admin</a>
+        </p>
+      </div>
+    </div>
+    <div class="muhammad" id="ampun" style="display: none; z-index: 1000;">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          <div class="inputbox">
+            <input required="required" type="email" id="u" />
+            <span>Username</span>
+            <i></i>
+          </div>
+          <div class="password">
+            <input required="required" type="password" id="p"/>
+            <span>Password</span>
+            <i></i>
+          </div>
+          <button type="button" class="btn" onclick="yaks()" >X</button>
+          <a href="data_pengguna.html" style="text-decoration: none; color: black; text-align: center;" class="btnlog" onclick="return rasa()">Masuk sebagai pengguna</a>
+        </p>
+      </div>
+    </div>
+    <a href="tata_surya.html"><button class="button1">Materi</button></a>
+    <button class="button2" onclick="maumau()">Quiz</button>
+    <button class="contact" onclick="ContacT()">About Us</button>
+    <div class="tempat" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          <button type="button" class="btn" onclick="hayo()">X</button>
+          (　＾∀＾) <br />
+          By Miyuki Ganteng!!!
+        </p>
+      </div>
+    </div>
+    <div class="muhammad" id="iya" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          <div class="inputbox">
+            <input required="required" type="email" id="username" />
+            <span>Username</span>
+            <i></i>
+          </div>
+          <div class="password">
+            <input required="required" type="password" id="password"/>
+            <span>Password</span>
+            <i></i>
+          </div>
+          <button type="button" class="btn" onclick="kacau()" >X</button>
+        </p>
+      </div>
+      <a href="quiz.html"  onclick="return huhuy()" style="text-decoration: none; color: black; text-align: center;" class="btnlog">Login</a>
+      <div class="akun">
+        <div class="buat">Anda</div>
+        <div class="buat">belum</div>
+        <div class="buat">membuat</div>
+        <div class="buat">akun?</div>
+        <div class="buat" style="color: blue ; cursor: pointer;" id="hidup" onclick="dafar()">Daftar</div>
+      </div>
+    </div>
+  <div class="bglp"><img src="aset/bglp.png" alt=""></div>
+    <div class="audio-controls">
+        <audio  autoplay id="backgroundAudio" src="aset/audia bglp.mp3" class="sound_bglp"></audio>
+    </div>
+    <button id="audio_button">|></button>
+    <p class="login" onclick="ha()">Login</p>
+    <div class="muhammad" id="daftar" style="display: none; z-index: 1000;">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          <div class="inputbox">
+            <input required="required" type="email" id="username" />
+            <span>Username Untuk Sign in</span>
+            <i></i>
+          </div>
+          <div class="password">
+            <input required="required" type="password" id="password"/>
+            <span>Password Untuk Sign in</span>
+            <i></i>
+          </div>
+          <button type="button" class="btn" onclick="kacau()" >X</button>
+        </p>
+      </div>
+      
+      <a href="tata_surya.html" style="text-decoration: none; color: black; text-align: center;" class="btnlog">Daftar</a>
+      
+    <script>
+      const audio = document.getElementById("backgroundAudio");
+      const button = document.getElementById("audio_button");
+
+      button.addEventListener("click", function () {
+        if (audio.paused) {
+          audio.play();
+          button.textContent='||'
+        } else {
+          audio.pause();
+          button.textContent= '|>'
+        }
+      });
+      function createStars() {
+        const container = document.querySelector("body");
+        for (let i = 0; i < 1000; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.width = ".1px";
+          star.style.height = ".1px";
+          star.style.top = Math.random() * 100 + "%";
+          star.style.left = Math.random() * 100 + "%";
+          container.appendChild(star);
+        }
+      }
+      createStars();
+
+      // ini sagan contact
+      function ContacT() {
+        let contact = document.querySelector(".tempat");
+       
+        if (contact.style.display === "none") {
+          contact.style.display = "block";
+        }
+        
+      }
+      function dafar() {
+        let contact = document.querySelector("#daftar");
+        let diw = document.querySelector("#iya")
+        if (contact.style.display === "none") {
+          contact.style.display = "block";
+          diw.style.display ="none"
+        }
+      }
+      
+      function hayo() {
+        let mauladi = document.querySelector(".tempat");
+        if (mauladi.style.display === "block") {
+          mauladi.style.display = "none";
+        }
+      }
+      function uh() {
+        let mauladi = document.querySelector("#akai");
+        if (mauladi.style.display === "block") {
+          mauladi.style.display = "none";
+        }
+      }
+      function yaks() {
+        let mauladi = document.querySelector("#ampun");
+        if (mauladi.style.display === "block") {
+          mauladi.style.display = "none";
+        }
+      }
+      function maumau() {
+        let iya = document.querySelector("#iya");
+        if (iya.style.display === "none") {
+          iya.style.display = "block";
+        }
+      }
+      function ha() {
+        let iya = document.querySelector("#he");
+        if (iya.style.display === "none") {
+          iya.style.display = "block";
+        }
+      }
+      function tak() {
+        let iya = document.querySelector("#akai");
+        if (iya.style.display === "none") {
+          iya.style.display = "block";
+        }
+      }
+      function tahu() {
+        let iya = document.querySelector("#ampun");
+        if (iya.style.display === "none") {
+          iya.style.display = "block";
+        }
+      }
+      function kacau() {
+        let mauladi = document.querySelector("#iya");
+        let diw = document.querySelector("#daftar");
+        let apa = document.querySelector("#he")
+        
+
+        if (mauladi.style.display === "block") {
+          mauladi.style.display = "none";
+        }
+        else if (diw.style.display === "block"){
+          diw.style.display = "none"
+        }
+        else if (apa.style.display === "block"){
+          apa.style.display = "none"
+        }
+      }
+      
+      function huhuy() {
+        let username = document.querySelector("#username").value;
+        let password = document.querySelector("#password").value;
+        if (username === "mauladi" && password === "miyuki") {
+          alert("Meluncur")
+          return true;
+        } 
+        else if(username ==="sayang" && password==="kamu") {
+          alert("Meluncur")
+          return true;
+        }
+        else {
+          alert("Username atau Password salah.");
+          return false;
+        }
+      }
+      function chuak() {
+        let username = document.querySelector("#user").value;
+        let password = document.querySelector("#pass").value;
+        if (username === "mauladi" && password === "miyuki") {
+          alert("Meluncur")
+          return true;
+        } 
+        else if(username ==="sayang" && password==="kamu") {
+          alert("Meluncur")
+          return true;
+        }
+        else {
+          alert("Username atau Password salah.");
+          return false;
+        }
+      }
+       function rasa() {
+        let username = document.querySelector("#u").value;
+        let password = document.querySelector("#p").value;
+        if (username === "mauladi" && password === "miyuki") {
+          alert("Meluncur")
+          return true;
+        } 
+        else if(username ==="sayang" && password==="kamu") {
+          alert("Meluncur")
+          return true;
+        }
+        else {
+          alert("Username atau Password salah.");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

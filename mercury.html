@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="mercury.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercury</title>
+  </head>
+  <body>
+    <a href="tata_surya.html" class="picikan"
+      ><button class="button1">X</button></a
+    >
+    <img src="aset/mercury.png" alt="mercury" class="mercury" />
+    <div class="aku" style="position: absolute">
+      <div class="container">
+        <button class="penjelasan1" type="button" onclick="hayo()" style="background-color: white; color: black;">1</button>
+        <button class="penjelasan2" type="button" onclick="sate()">2</button>
+        <button class="penjelasan3" type="button" onclick="asalain()">3</button>
+        <button class="penjelasan4" type="button" onclick="bahagia()">4</button>
+      </div>
+    </div>
+    <div class="tempat">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Merkurius adalah planet paling ekstrem di tata surya kita. Ini adalah
+          planet terkecil, memiliki permukaan tertua, terdekat dengan Matahari,
+          dan memiliki variasi suhu harian terbesar. Sebelum misi MESSENGER
+          NASA, Merkurius adalah yang paling sedikit dieksplorasi. MESSENGER,
+          yang memasuki orbit Merkurius pada Maret 2011, telah mengubah
+          pemahaman kita tentang planet ini. Pesawat luar angkasa tersebut
+          mengungkap sejarah geologis Merkurius, sifat medan magnetnya yang
+          lemah, struktur intinya, dan komposisi eksosfer tipisnya. MESSENGER
+          bahkan menemukan petunjuk adanya air di kutub gelap Merkurius.
+          <br />
+          <br />
+
+          Kawah Hokusai: <br />Kawah Hokusai, dinamai dari seniman Jepang
+          Katsushika Hokusai, adalah sumber dari garis-garis yang memancar di
+          gambar. Sistem sinar ini membentang hingga sejauh 1000 km, terbentuk
+          ketika suatu tumbukan menggali material dari bawah permukaan dan
+          meledakkannya keluar dari kawah. Sinar-sinar ini memudar seiring
+          waktu, menunjukkan bahwa kawah dengan sinar terang relatif muda.
+          <br />
+          <br />
+          Cekungan Caloris: <br />
+          Cekungan Caloris adalah salah satu cekungan tumbukan terbesar di tata
+          surya, dengan diameter sekitar 1500 km. Dibuat oleh tumbukan benda
+          berukuran asteroid besar, cekungan ini terlihat dalam warna kekuningan
+          pada mosaik warna yang diperbesar. Bercak oranye di sekitar tepi
+          cekungan sekarang dianggap sebagai ventilasi vulkanik, menunjukkan
+          bahwa dataran halus Merkurius adalah aliran lava.
+        </p>
+      </div>
+    </div>
+    <div class="tempat1" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Transit Merkurius: <br />Transit Merkurius di depan piringan Matahari
+          terjadi pada 8 November 2006. Merkurius berjarak sekitar 57 juta km
+          dari Matahari. <br /><br />
+          Karakteristik Fisik Merkurius: <br />
+          <ul>
+            <li>Diameter: sekitar 4879 km</li>
+              <li>Jarak dari Matahari: sekitar 57.910.000 km (0,39 AU)</li>
+              <li>Jumlah Bulan: 0</li>
+              <li>Suhu: -160°C hingga 430°C</li>
+              <li>Massa: 3,30 x 10^23 kg (sekitar 5% dari massa Bumi)</li>
+              <li>Periode Rotasi: 59 hari</li>
+              <li>Periode Orbit: 88 hari</li>
+              <li>Atmosfer: sangat tipis</li>
+              <li>Kemiringan Sumbu: 0,4 derajat</li>
+              <li>Medan Magnet: sangat lemah</li>
+          </ul>
+        </p>
+        
+      </div>
+    </div>
+    <div class="tempat2" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          
+        </p>
+      </div>
+    </div>
+    <div class="tempat3" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+         
+        </p>
+      </div>
+    </div>
+    <script>
+      function createStars() {
+        const container = document.querySelector("body");
+        for (let i = 0; i < 1000; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.width = ".1px";
+          star.style.height = ".1px";
+          star.style.top = Math.random() * 160 + "%";
+          star.style.left = Math.random() * 100 + "%";
+          container.appendChild(star);
+        }
+      }
+      createStars();
+
+     function hayo() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan1");
+        let yahe = document.querySelector(".penjelasan2");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (mauladi.style.display === "none") {
+          mauladi.style.display = "block";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+          
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+         
+        }
+      }
+      function sate() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan2")
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (astro.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "block";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function asalain() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan3");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan4")
+        
+
+        if (apayok.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "block";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function bahagia() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan4");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan3")
+
+        if (enak.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "block";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+    </script>
+  </body>
+</html>

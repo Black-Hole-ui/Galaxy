@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="earth.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earth</title>
+  </head>
+  <body>
+    
+    <a href="tata_surya.html" class="picikan"
+      ><button class="button1">X</button></a
+    >
+    <img src="aset/earth.png" alt="earth" class="earth" />
+    <div class="aku" style="position: absolute">
+      <div class="container">
+        <button class="penjelasan1" type="button" onclick="hayo()" style="background-color: white; color: black;">1</button>
+        <button class="penjelasan2" type="button" onclick="sate()">2</button>
+        <button class="penjelasan3" type="button" onclick="asalain()">3</button>
+        <button class="penjelasan4" type="button" onclick="bahagia()">4</button>
+      </div>
+    </div>
+    <div class="tempat">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Bumi adalah planet ketiga dari Matahari dan satu-satunya planet yang
+          diketahui mendukung kehidupan. Dengan orbit berbentuk elips dan rotasi
+          yang miring 23,5 derajat, Bumi mengalami pergantian musim dan
+          siang-malam. Bumi terdiri dari beberapa lapisan utama: kerak yang
+          keras, mantel semi-cair, inti luar cair, dan inti dalam padat. <br />
+          <br />
+          Atmosfer Bumi terdiri dari lapisan-lapisan seperti troposfer,
+          stratosfer, mesosfer, termosfer, dan eksosfer. Lapisan ini melindungi
+          Bumi dari radiasi berbahaya dan memungkinkan terjadinya cuaca. Selain
+          atmosfer, hidrosfer Bumi, yang mencakup lautan, danau, dan sungai,
+          memainkan peran penting dalam siklus air, menjaga ekosistem yang
+          beragam. <br />
+          <br />
+          Bumi juga memiliki medan magnet yang melindungi dari partikel
+          berbahaya dari angkasa. Gravitasi Bulan mempengaruhi pasang surut air
+          laut dan menstabilkan rotasi Bumi, yang penting untuk kestabilan
+          iklim. Dengan keanekaragaman hayati yang luas dan kondisi yang
+          mendukung kehidupan, Bumi tetap menjadi fokus utama dalam penelitian
+          ilmiah dan eksplorasi. <br />
+          <br />
+        </p>
+      </div>
+    </div>
+    <div class="tempat1" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+          Atmosfer tipis Bumi adalah satu-satunya penghalang antara kehidupan di
+          Bumi dan kehampaan gelap dan dingin di luar angkasa. Atmosfer planet
+          kita tidak memiliki batas atas yang jelas, tetapi secara bertahap
+          menipis ke luar angkasa. Lapisan-lapisan atmosfer memiliki
+          karakteristik yang berbeda, seperti ozon pelindung di stratosfer dan
+          cuaca di lapisan terbawah. Matahari yang sedang terbenam terlihat
+          melalui atmosfer Bumi, yang ditampilkan dalam gambar ini, difoto oleh
+          kru Stasiun Luar Angkasa Internasional pada tahun 2008. <br />
+          <br />
+          Aurora Borealis dan Aurora Australis :
+          <br />
+          adalah fenomena menakjubkan yang tidak terlupakan bagi yang pernah
+          melihatnya. Aurora ini disebabkan oleh arus partikel bermuatan yang
+          energik di magnetosfer Bumi yang mengalir melalui atmosfer bagian
+          atas. Interaksi angin matahari dengan magnetosfer Bumi menggerakkan
+          arus ini. Semakin aktif Matahari, terutama selama puncak siklus 11
+          tahunnya, semakin banyak partikel bermuatan yang mengalir ke kutub
+          magnetik Bumi. Partikel bermuatan ini akhirnya bertabrakan dengan
+          molekul gas di atmosfer bagian atas, menyebabkan mereka terionisasi
+          (kehilangan elektron) dan memancarkan cahaya berwarna.
+        </p>
+      </div>
+    </div>
+    <div class="tempat2" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+           Karakteristik Fisik Earth: <br />
+          <ul>
+            <li>diameter: 12.742 km</li>
+            <li>jarak dari matahari: 149.600.000 km (1,0 AU)</li>
+            <li>jumlah bulan: 1</li>
+            <li>suhu: -89°C hingga 70°C</li>
+            <li>massa: 6 x 10^24 kg</li>
+            <li>periode rotasi: 24 jam</li>
+            <li>periode orbit: 365,25 hari</li>
+            <li>atmosfer: nitrogen, oksigen</li>
+            <li>kemiringan sumbu: 23,4 derajat</li>
+            <li>medan magnet: ada</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+    <div class="tempat3" style="display: none">
+      <div class="latar_hitam"></div>
+      <div class="warna_kotak"></div>
+      <div class="hitam_utama">
+        <p class="tulisan">
+        </p>
+      </div>
+    </div>
+    <script>
+      function createStars() {
+        const container = document.querySelector("body");
+        for (let i = 0; i < 1000; i++) {
+          const star = document.createElement("div");
+          star.className = "star";
+          star.style.width = ".1px";
+          star.style.height = ".1px";
+          star.style.top = Math.random() * 160 + "%";
+          star.style.left = Math.random() * 100 + "%";
+          container.appendChild(star);
+        }
+      }
+      createStars();
+
+      function hayo() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan1");
+        let yahe = document.querySelector(".penjelasan2");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (mauladi.style.display === "none") {
+          mauladi.style.display = "block";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+          
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+         
+        }
+      }
+      function sate() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan2")
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan3");
+        let yahi = document.querySelector(".penjelasan4")
+
+        if (astro.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "block";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function asalain() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan3");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan4")
+        
+
+        if (apayok.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "block";
+          enak.style.display = "none";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+      function bahagia() {
+        let mauladi = document.querySelector(".tempat");
+        let astro = document.querySelector(".tempat1");
+        let apayok = document.querySelector(".tempat2");
+        let enak = document.querySelector(".tempat3");
+        let yaha = document.querySelector(".penjelasan4");
+        let yahe = document.querySelector(".penjelasan1");
+        let yaho = document.querySelector(".penjelasan2");
+        let yahi = document.querySelector(".penjelasan3")
+
+        if (enak.style.display === "none") {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "block";
+          yaha.style.background = "white"
+          yaha.style.color = "black"
+          yahe.style.background = "black"
+          yahe.style.color = "white"
+          yaho.style.background = "black"
+          yaho.style.color = "white"
+          yahi.style.background = "black"
+          yahi.style.color = "white"
+        } else {
+          mauladi.style.display = "none";
+          astro.style.display = "none";
+          apayok.style.display = "none";
+          enak.style.display = "none";
+          yaha.style.background = "black";
+          yaha.style.color = "white"
+        }
+      }
+    </script>
+  </body>
+</html>
